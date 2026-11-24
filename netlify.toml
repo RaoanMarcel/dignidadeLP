@@ -6,3 +6,6 @@
   # O projeto usa SSR (TanStack Start + Nitro). O padrão da config é Cloudflare, então forçamos Netlify.
   NITRO_PRESET = "netlify"
   NODE_VERSION = "22"
+  # URL e chave publishable do Supabase são públicas (vão no JS do navegador por design).
+  # A SUPABASE_SERVICE_ROLE_KEY NÃO entra aqui: o scanner continua protegendo ela.
+  SECRETS_SCAN_OMIT_KEYS = "SUPABASE_URL,VITE_SUPABASE_URL,SUPABASE_PUBLISHABLE_KEY,VITE_SUPABASE_PUBLISHABLE_KEY"
