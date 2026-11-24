@@ -1,0 +1,8 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  # O projeto usa SSR (TanStack Start + Nitro). O padrão da config é Cloudflare, então forçamos Netlify.
+  NITRO_PRESET = "netlify"
+  NODE_VERSION = "22"

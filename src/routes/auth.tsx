@@ -69,9 +69,6 @@ function AuthPage() {
             {loading ? "Entrando..." : "Entrar"}
           </button>
         </form>
-        <p className="mt-6 text-xs text-muted-foreground text-center">
-          Novos administradores devem ser criados pelo painel do Lovable Cloud.
-        </p>
       </div>
     </div>
   );

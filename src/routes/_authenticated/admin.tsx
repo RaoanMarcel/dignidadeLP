@@ -79,8 +79,7 @@ function AdminPage() {
         <div className="max-w-md text-center rounded-3xl bg-card border border-border p-8 shadow-soft">
           <h1 className="font-display text-2xl text-ocean">Sem permissão</h1>
           <p className="mt-3 text-muted-foreground">
-            Sua conta está autenticada, mas ainda não é administradora. Peça a um admin para
-            adicionar o papel <code className="text-xs">admin</code> ao seu usuário no painel do Lovable Cloud.
+            Sua conta está autenticada, mas ainda não tem permissão de administrador. Adicione o papel <code className="text-xs">admin</code> ao seu usuário diretamente na tabela <b>user_roles</b> no painel do seu Supabase.
           </p>
           <div className="mt-6 flex gap-3 justify-center">
             <Link to="/" className="rounded-full border border-border px-4 py-2 text-sm hover:bg-secondary">Voltar ao site</Link>
